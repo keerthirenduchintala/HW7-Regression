@@ -167,7 +167,7 @@ class LogisticRegressor(BaseRegressor):
             X (np.ndarray): Matrix of feature values.
 
         Returns: 
-            Vector of gradients.clau
+            Vector of gradients.
         """
         y_pred = self.make_prediction(X)
 
