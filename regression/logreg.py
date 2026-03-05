@@ -167,12 +167,12 @@ class LogisticRegressor(BaseRegressor):
             X (np.ndarray): Matrix of feature values.
 
         Returns: 
-            Vector of gradients.
+            Vector of gradients.clau
         """
         y_pred = self.make_prediction(X)
 
         error = y_pred - y_true
 
-        gradient = np.sum(error.reshape((-1,1)) * X, axis = 0)
+        gradient = np.mean(error.reshape((-1,1)) * X, axis = 0)
 
         return gradient
