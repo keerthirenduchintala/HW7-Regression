@@ -11,7 +11,7 @@ This is not an exhaustive list.
 # Imports
 import pytest
 import numpy as np
-from regression.logreg import LogisticRegressor, loadDataset
+from regression.logreg import LogisticRegressor
 
 def test_prediction():
 	# Test the prediction 
